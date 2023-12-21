@@ -1,0 +1,184 @@
+html{
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(24,24,24);
+    display: inline-block;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13),       transparent),
+      radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+  }
+  canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: inline;
+  }
+  
+  /* a {
+    position: absolute;
+    bottom: 2vmin;
+    right: 2vmin;
+    color: rgba(255,255,255,0.2);
+    text-decoration: none;
+  } */
+  
+  a:hover {
+    color: #fff;
+  }
+.first-link:hover{
+    color: rgb(0, 255, 255);
+}
+@font-face {
+    font-family: iransans;
+ src: url(./fonts/IRANSans/woff2/IRANSansWeb\(FaNum\.woff2) format(woff2),
+        url(./fonts/IRANSans/woff/IRANSansWeb\(FaNum\.woff) format(woff),
+        url(./fonts/IRANSans/ttf/IRANSansWeb\(FaNum\.ttf) format(true type);  
+}
+@media screen and (orientation:landscape) {
+    .form-container{
+        position: relative;
+        top: 10vh;
+        left: 15vw;
+        background-color: rgb(10, 17, 26);
+        width: 18.7rem;
+        height: 20.6rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1.5625rem .9375rem rgba(0, 0,0, 0.5);
+    }
+}
+@media screen and (max-width:480px) {
+    .form-container{
+        position: relative;
+        top: 25vh;
+        left: 12vw;
+        background-color: rgb(10, 17, 26);
+        width: 18.7rem;
+        height: 20.6rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1.5625rem .9375rem rgba(0, 0,0, 0.5);
+    }
+}
+@media screen and (min-width:481px) {
+    .form-container{
+        position: relative;
+        top: 25vh;
+        left: 22vw;
+        background-color: rgb(10, 17, 26);
+        width: 18.7rem;
+        height: 20.6rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1.5625rem .9375rem rgba(0, 0,0, 0.5);
+    }
+}
+@media screen and (min-width:769px) {
+    .form-container{
+        position: relative;
+        top: 25vh;
+        left: 30vw;
+        background-color: rgb(10, 17, 26);
+        width: 18.7rem;
+        height: 20.6rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1.5625rem .9375rem rgba(0, 0,0, 0.5);
+    }
+}
+@media screen and (min-width:1280px) {
+    .form-container{
+        position: relative;
+        top: 25vh;
+        left: 38vw;
+        background-color: rgb(10, 17, 26);
+        width: 18.7rem;
+        height: 20.6rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1.5625rem .9375rem rgba(0, 0,0, 0.5);
+    }
+}
+@media screen and (min-width:1400px) {
+    .form-container{
+        position: relative;
+        top: 25vh;
+        left: 42vw;
+        background-color: rgb(10, 17, 26);
+        width: 18.7rem;
+        height: 20.6rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1.5625rem .9375rem rgba(0, 0,0, 0.5);
+    }
+}
+h1{
+    color: rgb(0, 255, 255);
+    padding-top: 1.5625rem;
+    margin-bottom: 2rem;
+    font-weight: 200;
+    font-size: 2.4rem;
+}
+input{
+    background-color: rgb(44, 78, 78);
+    border: 2px solid rgb(44, 78, 78) ;
+    border-radius: 2px;
+    width: 15rem;
+    height: 1.875rem;
+    color: #ffff;
+    padding-left: .5rem;
+    transition: all 800ms;
+}
+input::placeholder{
+    color: rgba(199, 199, 199, 0.596);
+}
+input:focus{
+    transform: scale(1.05);
+}
+button{
+    margin-top: 1.3rem;
+    background-color: rgb(0, 255, 255);
+    border-color: rgb(0, 255, 255);
+    border-radius: 3px;
+    padding-left: 6.0625rem;
+    padding-right: 6.0625rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.3125rem;
+    font-weight: 500;
+    transition: all 800ms;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem .5rem rgba(255, 255, 255,.2);
+}
+.first-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 4.5rem;
+    text-align: right;
+    font-size: 1rem;
+}
+.second-link{
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+a{
+    transition: all 800ms;
+}
+.form-inputs{
+    margin-bottom: 1.25rem;
+}
+a:hover{
+    font-size: 1.05rem;
+}
